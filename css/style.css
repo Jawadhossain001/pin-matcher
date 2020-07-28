@@ -31,7 +31,9 @@ body {
     outline: none;
     box-shadow: none;
 }
-
+.generate-btn:hover {
+    background-color: red;
+}
 input[type='text']{
     background-color: #3D4153;
     padding: 10px 0px;
@@ -40,6 +42,9 @@ input[type='text']{
     border: 2px solid #858299;
     height: 50px;
     padding: 10px;
+    color:white;
+    text-align:center;
+    font-size:25px;
 }
 input[type='text']:focus {
     background-color: #3D4153;
@@ -49,7 +54,6 @@ input[type='text']:focus {
 .numbers {
     margin: 30px 0;
 }
-
 .calc-typed {
 margin-top: 20px;
 font-size: 45px;
@@ -60,7 +64,6 @@ color: #fff;
 .calc-button-row {
 width: 100%;
 }
-
 .button {
 width: 20%;
 background: #425062;
@@ -75,16 +78,22 @@ margin-right: -4px;
 border-radius: 10px;
 cursor: pointer;
 }
+.button:hover {
+    background-color: red;
+}
 .blink-me {
 color: #E0B612;
 }
 .submit-btn {
     border: none;
     margin-top: 20px;
-    padding: 10px 120px;
+    padding: 10px 109px;
     border-radius: 5px;
     background: #495BC3;
     color: #fff;
+}
+.submit-btn:hover {
+    background-color: red;
 }
 .notify {
     color: #fff;
@@ -98,6 +107,12 @@ color: #E0B612;
 .notify-section{
     width: 35%;
     margin: 0 auto;
+}
+#notMatch-alert{
+    display: none;
+}
+#match-alert{
+    display: none;
 }
 .action-left {
     color: #FF3C5F;
