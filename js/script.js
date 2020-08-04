@@ -55,6 +55,9 @@ submitConfirmationPin.addEventListener("click", function(){
             notMatchAlert.style.display = "block";
         }
     }
+    else{
+        notMatchAlert.style.display = "block";
+    }
 
     let tryToCount = document.getElementById("tryToCount");
     let decrease = parseInt(tryToCount.innerText)-1;
